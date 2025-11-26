@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hallo Sayangku</title>
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f2f4f8;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        text-align: center;
+        transition: background-color 0.6s ease;
+      }
+
+      header {
+        background-color: #4caf50;
+        color: white;
+        padding: 20px;
+        font-size: 24px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      h2 {
+        margin-top: 60px;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 15px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      nav {
+        background: #fffdfdea;
+        padding: 8px 0; /* navbar lebih kecil */
+        margin: 0;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      nav a {
+        color: rgb(65, 12, 255);
+        text-decoration: none;
+        margin: 0 8px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #1c1d18;
+      }
+
+      nav button {
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-left: 5px;
+        margin: 10px;
+        background-color: rgb(179, 179, 228);
+        border: none;
+        padding: 7px 90px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      nav button a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+      }
+
+      nav button:hover {
+        background-color: #d8d8d8a1;
+        transform: translateY(-1px);
+      }
+
+      .card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+      }
+
+      .card-body {
+        padding: 15px;
+      }
+
+      .card-body h4 {
+        margin: 10px 0 5px;
+        color: #2e7d32;
+      }
+
+      .container {
+       width: 90%;
+       max-width: 1000px;
+       margin: 0 auto;
+        border-color: blue;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>🌸 Selamat Datang 🌸</header>
+
+    <h2 id="sapaan"></h2>
+
+    <footer>© 2025 - Dibuat dengan ❤️</footer>
+
+    <script>
+      // Pesan awal
+      alert("Selamat Datang Pengunjung!");
+
+      // Ambil nama dari pengguna
+      var nama = prompt("Siapa Nama Kamu?", "");
+
+      // Tampilkan di halaman
+      document.getElementById("sapaan").innerText = "Hallo " + nama + "!";
+
+      // Pesan tambahan
+      alert("Ohh, jadi kamu yang namanya " + nama);
+
+      // Ganti warna background berdasarkan nama
+      if (nama === "Sri Purwanti") {
+        alert("Hallo Sayang ❤️");
+        document.body.style.backgroundColor = "#ffe6f0"; // pink lembut
+      } else if (nama === "sri purwanti") {
+        document.body.style.backgroundColor = "#e0f7fa"; // biru lembut
+      } else if (nama === "Sri purwanti") {
+        document.body.style.backgroundColor = "#fff3cd"; // kuning lembut
+      } else {
+        // jika bukan nama yang diizinkan
+        window.location.href = "ifnot.html";
+      }
+    </script>
+
+      <div> 
+      <main class="container">
+       <section>
+        <div class="grid">
+        <article class="card">
+          <h1>Halo Sayangku</h1>
+          <nav>
+            <button onclick="alert ('Yey!')" >Sayang Aku ?</button>
+            <button onclick="location.href='dokum.html'"> Foto Si Imut! <br> </button>
+            <button onclick="location.href='pesan.html'">Pesan Untukmu! </button>
+            <button onclick="location.href='kita.html'">Ini Kita!!<br> </button>
+            <button onclick="location.href='pesandede.html'">Pesan Dari Dede? <br> </button>
+          </nav>
+        </div>
+        </article>
+       </section>
+      </div>
+
+
+
+
+  </body>
+</html>
